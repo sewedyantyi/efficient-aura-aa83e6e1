@@ -17,6 +17,7 @@ type Props = {
   placeholder: string;
   examples: string[];
   cta: string;
+  defaultInput?: string;
 };
 
 export function ToolWorkspace({
@@ -28,8 +29,9 @@ export function ToolWorkspace({
   placeholder,
   examples,
   cta,
+  defaultInput = "",
 }: Props) {
-  const [input, setInput] = useState("");
+  const [input, setInput] = useState(defaultInput);
   const [output, setOutput] = useState("");
   const generate = useServerFn(generateContent);
 
