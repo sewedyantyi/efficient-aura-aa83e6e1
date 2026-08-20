@@ -88,7 +88,7 @@ export function AppShell({ children }: { children: ReactNode }) {
 
         <footer className="border-t border-border px-4 py-5 sm:px-8">
           <p className="mx-auto max-w-4xl text-center text-xs text-muted-foreground">
-            This AI may produce incorrect results. Always review outputs before use.
+            This AI assistant may generate incorrect or incomplete information. Always review outputs before use. Do not share personal or sensitive information.
           </p>
         </footer>
       </div>
